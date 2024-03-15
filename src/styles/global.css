@@ -160,3 +160,8 @@
     border-radius: 50%;
     object-fit: cover;
 }
+@media (max-width: 767px) {
+    .chat-bubble .right, .chat-bubble .left{
+        max-width: 90%;
+    }
+}

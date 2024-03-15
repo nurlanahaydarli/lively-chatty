@@ -11,10 +11,9 @@ import Message from "../Message/Message";
 import SendMessage from "../Message/SendMessage";
 
 const Chat=(props)=>{
-    const { room } = props;
-
     const [messages, setMessages] = useState([]);
     const scroll = useRef();
+    console.log(scroll,'scroll')
     useEffect(() => {
         const q = query(
             collection(db, "messages"),
@@ -42,8 +41,7 @@ const Chat=(props)=>{
                         <Message key={message.id} message={message} />
                     ))}
                 </div>
-                {/* when a new message enters the chat, the screen scrolls down to the scroll div */}
-                <span ref={scroll}></span>
+                <span ref={scroll} />
                 <SendMessage scroll={scroll} />
             </main>
         </>

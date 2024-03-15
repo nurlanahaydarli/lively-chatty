@@ -9,13 +9,10 @@ import {getFirestore} from 'firebase/firestore'
 const firebaseConfig = {
     apiKey: "AIzaSyDlByYg5SzD7Skd_QnksCf77dnNRLxPYHc",
     authDomain: "lively-chatty.firebaseapp.com",
-    databaseURL: "https://lively-chatty-default-rtdb.firebaseio.com",
     projectId: "lively-chatty",
     storageBucket: "lively-chatty.appspot.com",
     messagingSenderId: "722878667402",
     appId: "1:722878667402:web:8617969b3239e6190d2b73",
-    measurementId: "G-HY36V8J0DL"
-
 };
 
 // Initialize Firebase
